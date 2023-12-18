@@ -1,0 +1,28 @@
+:root {
+    --socials-size: 50px;
+}
+
+#socials {
+    height: var(--socials-size);
+    line-height: var(--socials-size);
+    text-align: center;
+    border: 2px dashed #f69c55;
+}
+
+#socials>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#socials>a {
+
+    line-height: normal;
+    text-align: center;
+    font-size: 100%;
+}
+
+.icon {
+
+    height: 40%;
+    overflow: hidden;
+}
