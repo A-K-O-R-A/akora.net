@@ -1,0 +1,15 @@
+name: Webhook trigger
+
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        env:
+          SUPER_SECRET: ${{ secrets.WEBHOOK_TOKEN }}
+        run: |
+          example-command "$SUPER_SECRET"
